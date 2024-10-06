@@ -1,0 +1,146 @@
+#lien-he {
+    position: relative;
+    min-height: 18rem;
+    /* margin-bottom: 10rem; */
+  }
+  .background1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    /* height: 15rem; */
+    background-image: url("/images/lienhe-bg.jpg");
+    background-size: cover;
+    opacity: 0.5;
+    background-position: center;
+  }
+
+  .overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    /* height: 15rem; */
+    background-color: rgba(173, 126, 72, 0.5); /* Độ trong suốt 50% */
+  }
+
+  .container,
+  #lien-he .container {
+    position: relative;
+    z-index: 1; /* Đặt nội dung lên trên lớp phủ */
+    text-align: center;
+  }
+
+  .card {
+    background-color: white; /* Nền trong suốt */
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    padding: 20px;
+    margin-bottom: 20px; /* Khoảng cách giữa các ô */
+  }
+
+  .card:hover {
+    transform: scale(1.05); /* Hiệu ứng phóng to khi di chuột */
+  }
+
+  .content-p > p {
+    color: #fff;
+    text-align: justify;
+  }
+
+  .p1,
+  .p2,
+  .sp1 {
+    text-transform: uppercase;
+    font-size: 1.40625rem !important; /* 22.5px */
+    color: white; /* Màu chữ trắng */
+  }
+
+  .p1 {
+    margin: 0;
+  }
+
+  .card-title {
+    color: rgb(199, 199, 81);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .card-text {
+    color: black;
+    margin: 0; /* Xóa khoảng cách mặc định */
+  }
+
+  .icon {
+    font-size: 40px;
+  }
+
+  .product-title1 {
+    width: 100%;
+    text-align: left;
+    /* margin-left: 3rem; */
+    position: relative; /* Để sử dụng vị trí tương đối cho đường kẻ */
+    display: inline-block; /* Để kích thước thẻ h2 được tính theo nội dung */
+    margin-top: 5rem; /* Khoảng cách trên và dưới */
+    color: white; /* Màu chữ trắng */
+    font-family: "Gotham-Ultra"; /* Font chữ */
+    font-size: 1.5rem; /* Kích thước chữ */
+  }
+  .product-title2{
+    margin-top: 4.5rem; /* Khoảng cách trên và dưới */
+
+  }
+
+  .product-title1:after {
+    content: ""; /* Thêm nội dung rỗng cho pseudo-element */
+    display: block; /* Hiển thị dưới dạng block */
+    width: 30%; /* Chiều rộng đường kẻ */
+    height: 0.5rem; /* Độ cao của đường kẻ */
+    background-color: white; /* Màu đường kẻ */
+    /* margin: 0 auto;  */
+    opacity: 0; /* Bắt đầu với độ mờ */
+    transition: opacity 0.3s ease; /* Hiệu ứng chuyển tiếp */
+  }
+
+  .product-title1:hover:after {
+    opacity: 1; /* Hiện đường kẻ khi hover */
+  }
+
+  /* Đưa cột hình ảnh về bên trái */
+  .col-md-3 {
+    padding-left: 0; /* Bỏ padding bên trái */
+  }
+
+  /* Căn chỉnh thông tin liên hệ sang bên trái */
+  .contact-info {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: flex-start; /* Căn bên trái */
+  }
+
+  .contact-info input {
+    margin-right: 10px; /* Khoảng cách giữa input và button */
+  }
+
+  /* Căn giữa cột thông tin liên hệ */
+  .col-md-5 {
+    display: flex;
+    flex-direction: column; /* Đặt các phần tử theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    height: 100%; /* Để cột có chiều cao đầy đủ */
+  }
+  .img-ghe {
+    position: absolute;
+    bottom: -50px;
+    /* left: 50px; */
+    width: 20rem;
+}
+.btn-primary {
+  margin-bottom: 5px;
+  color: black;
+  background-color:white;
+  border-color: white;
+}
